@@ -1,0 +1,31 @@
+.scrollablebox {
+  width: 300px;
+  max-height: 400px;
+  overflow-y: scroll;
+  border: "1px solid red";
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  border: "1px solid red";
+}
+
+.scrollablebox::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.scrollablebox::-webkit-scrollbar-thumb {
+  background-color: blue; /* Set the color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+.scrollablebox::-webkit-scrollbar-track {
+  background-color: transparent; /* Set the background color of the scrollbar track */
+}

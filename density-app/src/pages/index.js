@@ -7,6 +7,7 @@ import Manifesto from '@/components/Manifesto';
 import Frustration from '@/components/Frustration';
 import Social from '@/components/Social';
 import TestComp from '@/components/TestComp';
+import Work from '@/components/Work';
 
 
 
@@ -17,8 +18,9 @@ const Home = () => {
       <Emotions/>
       <Manifesto/>
       <Frustration/>
-      {/* <Social/> */}
+      <Social/>
       <TestComp/>
+      {/* <Work/> */}
     </div>
   );
 };
