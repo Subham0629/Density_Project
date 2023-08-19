@@ -5,8 +5,25 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { BsEmojiDizzyFill, BsEmojiAngryFill} from "react-icons/bs"
+import { motion, transform } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useEffect, useState } from 'react';
+import '@fortawesome/fontawesome-free/css/all.css';
 
 const Manifesto = () => {
+  const [ref, inView, entry] = useInView();
+  const [animate, setAnimate] = useState(false);
+  const animationVariants = {
+    hidden: { x: -100, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
+  };
+  const animationVariantsghost = {
+    hidden: { x: 500, opacity: 0 }, // Start from the right (x: 100)
+    visible: { x: 0, opacity: 1 },  // Move to the left (x: 0)
+  };
+  if (inView && !animate) {
+    setAnimate(true);
+  }
     const settings = {
         dots: false,
         infinite: true,
@@ -34,8 +51,35 @@ const Manifesto = () => {
         </Box>
       </SimpleGrid>
     </Box>
-    <Box w={"90%"} m={"auto"} mt={"150px"}>
+    <Box w={"90%"} m={"auto"} mt={"150px"}  display={"flex"} gap={"20px"}>
+    <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={inView ? 'visible' : 'hidden'}
+        variants={animationVariants}
+        transition={{ duration: 1, type: 'spring' }}
+        onAnimationComplete={() => {
+          if (!inView) {
+            entry.target.style.opacity = 0; // Hide the element after animation
+          }
+        }}
+      >
     <Heading>Does this sound familier...</Heading>
+    </motion.div>
+    <motion.i class="fa-solid fa-ghost" 
+    ref={ref}
+    initial="hidden"
+    animate={inView ? 'visible' : 'hidden'}
+    variants={animationVariantsghost}
+    transition={{ duration: 1, type: 'spring' }}
+    onAnimationComplete={() => {
+      if (!inView) {
+        entry.target.style.opacity = 0; 
+      }}
+      
+    }
+    style={{color:"red",fontSize:"50px", transform:"rotate(-20deg)"}}
+    ></motion.i>
     </Box>
     <Box mt={"20px"} >
     <Slider {...settings} >
