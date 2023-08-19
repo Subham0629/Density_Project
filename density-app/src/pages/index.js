@@ -1,13 +1,17 @@
 
-import { Box, Heading } from '@chakra-ui/react';
+
+
+import Emotions from '@/components/Emotions';
 import Navbar from '../components/Navbar';
+import Manifesto from '@/components/Manifesto';
 
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      
+      <Emotions/>
+      <Manifesto/>
     </div>
   );
 };
