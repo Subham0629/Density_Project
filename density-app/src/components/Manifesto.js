@@ -87,8 +87,8 @@ const Manifesto = () => {
         <Box bg="teal.200" p={4} borderRadius="2xl" mt={"15px"} >
         <BsEmojiDizzyFill style={{color:"yellow", background:"black",borderRadius:"50%"}}/>
         <Heading size={"sm"} mb={"5px"} mt={"15px"}>You attend a class reunion</Heading>
-          <Text>You question yourself and wonder when they'll realize 
-            you're an unqualified imposter, instead of trusting yourself and your abilities.
+          <Text>You question yourself and wonder when they will realize 
+            you are an unqualified imposter, instead of trusting yourself and your abilities.
           </Text>
         </Box>
       </div>
@@ -106,7 +106,7 @@ const Manifesto = () => {
     <Box bg="blue.900" color={"white"} p={4} borderRadius="2xl" ml={"20px"}  mt={"15px"}>
       <BsEmojiDizzyFill style={{ color: "yellow", background: "black", borderRadius: "50%" }} />
       <Heading size={"sm"}>You attend a class reunion</Heading>
-      <Text>You question yourself and wonder when they'll realize you're an unqualified imposter, instead of trusting yourself and your abilities.</Text>
+      <Text>You question yourself and wonder when they will realize you are an unqualified imposter, instead of trusting yourself and your abilities.</Text>
     </Box>
   </div>
 </div>
@@ -123,8 +123,8 @@ const Manifesto = () => {
         <Box bg="teal.200" p={4} borderRadius="2xl" mt={"15px"} >
         <BsEmojiDizzyFill style={{color:"yellow", background:"black",borderRadius:"50%"}}/>
         <Heading size={"sm"} mb={"5px"} mt={"15px"}>You attend a class reunion</Heading>
-          <Text>You question yourself and wonder when they'll realize 
-            you're an unqualified imposter, instead of trusting yourself and your abilities.
+          <Text>You question yourself and wonder when they will realize 
+            you are an unqualified imposter, instead of trusting yourself and your abilities.
           </Text>
         </Box>
       </div>
@@ -142,7 +142,7 @@ const Manifesto = () => {
     <Box bg="blue.900" color={"white"} p={4} borderRadius="2xl" ml={"20px"}  mt={"15px"}>
       <BsEmojiDizzyFill style={{ color: "yellow", background: "black", borderRadius: "50%" }} />
       <Heading size={"sm"}>You attend a class reunion</Heading>
-      <Text>You question yourself and wonder when they'll realize you're an unqualified imposter, instead of trusting yourself and your abilities.</Text>
+      <Text>You question yourself and wonder when they will realize you are an unqualified imposter, instead of trusting yourself and your abilities.</Text>
     </Box>
   </div>
 </div>
